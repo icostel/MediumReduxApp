@@ -4,7 +4,10 @@ description: The medium application UI recreated on Flutter.
 dependencies:
   flutter:
     sdk: flutter
-
+  flutter_redux: ^0.6.0 # wraps the store with widgets so we can access the store in ui
+  http: ^0.12.0+4 # http stuff
+  redux: ^4.0.0 # adds redux for dart, mostly support for Store
+  redux_epics: ^0.13.0 # Glues actions to Store changes using pure functions
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
@@ -13,6 +16,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  mockito: 3.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec
